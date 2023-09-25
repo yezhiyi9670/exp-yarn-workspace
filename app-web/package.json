@@ -1,0 +1,13 @@
+{
+  "name": "app-web",
+  "author": "yezhiyi9670",
+  "version": "1.0.0",
+  "source": "./src/index.html",
+  "license": "MIT",
+  "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
+  "scripts": {
+    "start": "cross-env BUILD_TYPE=demo parcel --port 1234 --host localhost --dist-dir ./dist/test/",
+    "start-public": "cross-env BUILD_TYPE=demo parcel --port 1234 --host 0.0.0.0 --dist-dir ./dist/test/",
+    "build-demo": "ts-node ./src/builder/demo/clean.ts && cross-env BUILD_TYPE=demo parcel build --dist-dir ./dist/demo/ --public-url ./ src/index.html"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "core",
+  "main": "index.js",
+  "version": "1.0.0",
+  "author": "yezhiyi9670",
+  "license": "MIT"
+}

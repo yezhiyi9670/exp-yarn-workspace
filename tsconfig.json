@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "CommonJS",
+		"allowJs": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "preserve",
+		"noImplicitAny": true,
+		"paths": {
+			"@yarn-workspace/app-web": [ "./app-web" ],
+			"@yarn-workspace/core": [ "./core" ]
+		}
+	},
+	"exclude": [
+		"node_modules/*",
+		"dist/*"
+	]
+}
